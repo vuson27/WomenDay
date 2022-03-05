@@ -50,5 +50,12 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 			<source src="./music.mp3" type="audio/mp3">
 		</audio>
 		<script src="./script.js"></script>
+		<script>
+			document.addEventListener('click', play);
+			function play() {
+				document.getElementById('player').play();
+			}
+			play();
+		</script>
 	</body>
 </html>
